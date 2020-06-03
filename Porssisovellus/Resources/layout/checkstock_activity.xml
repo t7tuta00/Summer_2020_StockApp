@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <CheckedTextView
+        android:padding="10dp"
+        android:id="@+id/apple"
+        android:text="Apple"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <CheckedTextView
+        android:padding="10dp"
+        android:id="@+id/microsoft"
+        android:text="Microsoft"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <CheckedTextView
+        android:padding="10dp"
+        android:id="@+id/google"
+        android:text="Google"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/gobackbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Takaisin"/>
+
+</LinearLayout>
