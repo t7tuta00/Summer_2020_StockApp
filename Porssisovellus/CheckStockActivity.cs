@@ -27,17 +27,19 @@ namespace Porssisovellus
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.checkstock_activity);
 
+            SearchView search = FindViewById<SearchView>(Resource.Id.searchView1);
+
             Apple = FindViewById<CheckedTextView>(Resource.Id.apple);
             Microsoft = FindViewById<CheckedTextView>(Resource.Id.microsoft);
             Google = FindViewById<CheckedTextView>(Resource.Id.google);
 
-
             var btnGoBack = FindViewById<Button>(Resource.Id.gobackbutton);
 
-            //jos tarvii tuoda lisää:
             appleStatus = Intent.GetStringExtra("Apple");
             microsoftStatus = Intent.GetStringExtra("Microsoft");
             GoogleStatus = Intent.GetStringExtra("Google");
+
+
 
             if (appleStatus == "true") 
             {
@@ -109,13 +111,6 @@ namespace Porssisovellus
                 }
             };
 
-            //Takaisin nappi
-            btnGoBack.Click += delegate
-            {
-                this.Finish();
-            };
-
-            //takaisin gobacknappi
             FindViewById<Button>(Resource.Id.gobackbutton).Click += (o, e) => {
                 Intent nextActivity = new Intent(this, typeof(MainActivity));
                 
