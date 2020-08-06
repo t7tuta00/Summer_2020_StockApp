@@ -27,13 +27,14 @@
         android:layout_height="wrap_content"
         android:textSize="20dp"
         android:gravity="center"
-        android:text="Your stocks:"/>
+        android:text="Your current stocks:"/>
 
     <TextView
         android:id="@+id/amount"
         android:textSize="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:gravity="center"
         />
 
@@ -41,17 +42,18 @@
         android:id="@+id/Stockamount"
         android:inputType="text" 
         android:textSize="15dp"
-        android:layout_width="match_parent"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:hint="Amount of stocks"
         android:gravity="center"/>
 
      <Button
             android:id="@+id/Sell"
             android:textSize="20dp"
             android:contentDescription="@string/desc"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:background="#1B3147"
+            android:textColor="#FFFFFF"
             android:text="Sell"
             />
 

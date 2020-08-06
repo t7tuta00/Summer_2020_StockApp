@@ -25,30 +25,32 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textSize="20dp"
-        android:text="Stock amount:"/>
+        android:text="Your current stock:"/>
 
     <TextView
         android:id="@+id/amount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
+        android:textStyle="bold"
         android:gravity="center"/>
 
     <EditText
         android:id="@+id/Stockamount"
         android:inputType="text" 
-        android:layout_width="match_parent"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:hint="Amount of stocks"
         android:textSize="15dp"
         android:gravity="center"/>
 
      <Button
             android:id="@+id/Buy"
             android:contentDescription="@string/desc"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
             android:textSize="20dp"
+            android:background="#1B3147"
+            android:textColor="#FFFFFF"
             android:text="Buy"
             />
 

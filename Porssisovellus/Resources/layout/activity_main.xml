@@ -9,10 +9,23 @@
     android:background="#A0A0A0"
     android:orientation="horizontal">
 
+
+   <LinearLayout
+       android:id="@+id/firstline"
+       android:layout_width="match_parent"
+       android:layout_height="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp
+            "/>
+    </LinearLayout>
+
     <LinearLayout
         android:id="@+id/line1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/firstline">
         android:gravity="right">
 
         <Button
@@ -20,6 +33,9 @@
             android:contentDescription="@string/desc"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:background="#1B3147"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
             android:text="Add Stock"
             />
 
@@ -37,7 +53,6 @@
             android:id="@+id/stocklist"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-
         </LinearLayout>
 
     <LinearLayout
@@ -48,10 +63,13 @@
         app:layout_constraintTop_toBottomOf="@id/line2">
 
          <Button
-            android:id="@+id/button"
+            android:id="@+id/Settings"
             android:contentDescription="@string/desc"
             android:layout_width="match_parent"
+            android:background="#1B3147"
+            android:textColor="#FFFFFF"
             android:layout_height="60dp"
+            android:textSize="20dp"
             android:text="Settings"
             />
        

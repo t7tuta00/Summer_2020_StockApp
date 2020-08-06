@@ -8,11 +8,6 @@
     android:layout_height="match_parent"
     android:background="#ffffff">
 
-    <TextView
-        android:text="Index"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
     <SearchView
         android:id="@+id/searchView1"
         android:layout_width="match_parent"
@@ -29,8 +24,10 @@
             android:id="@+id/apple"
             android:text="Apple"
             android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:background="#DDDDDD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             />
 
         <CheckedTextView
@@ -38,6 +35,7 @@
             android:id="@+id/microsoft"
             android:text="Microsoft"
             android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
@@ -47,7 +45,9 @@
             android:id="@+id/google"
             android:text="Google"
             android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:background="#DDDDDD"
             android:layout_width="match_parent"
+            android:gravity="center"
             android:layout_height="wrap_content"
             />
 
@@ -56,12 +56,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="right">
+        android:paddingTop="20dp"
+        android:gravity="center">
     
         <Button
             android:id="@+id/gobackbutton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
+            android:background="#1B3147"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
             android:text="Save"/>
 
     </LinearLayout>

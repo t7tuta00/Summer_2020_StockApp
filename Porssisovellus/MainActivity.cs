@@ -130,6 +130,11 @@ namespace Porssisovellus
                 StartActivity(nextActivity);
             };
 
+            FindViewById<Button>(Resource.Id.Settings).Click += (o, e) =>
+            {
+                Toast.MakeText(this, "Settings doesn't work", ToastLength.Short).Show();
+            };
+
 
             lv = FindViewById<ListView>(Resource.Id.stocklist);
             adapter = new StockAdapter(this, Resource.Layout.list_item, GetStocks());
